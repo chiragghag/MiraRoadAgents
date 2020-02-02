@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mira Road Agents</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_date">Date</string>
+    <string name="action_rate">Rate</string>
+    <string name="action_locality">Locality</string>
+    <string name="add_property">Add Property</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="view_profile">View Profile</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="propertiesstar">Properties*</string>
+    <string name="properties">Properties</string>
+    <string name="addproperty">Add Property</string>
+    <string name="editproperty">Edit Property</string>
+    <string name="property_info">Property Info</string>
+    <string name="agents">Agents</string>
+    <string name="noticeboard">Noticeboard</string>
+    <string name="myprofile">My Profile</string>
+    <string name="myproperties">My Properties</string>
+    <string name="mynoticeboard">My Noticeboard</string>
+    <string name="mycitytown">My City Town</string>
+    <string name="myaccount">My Account</string>
+    <string name="optionalinfo">Optional Info</string>
+    <string name="membershipdetails">Membership Details</string>
+    <string name="membershipdetailsu"><u>Membership Details</u></string>
+    <string name="register">Register</string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="sell">Sell</string>
+    <string name="rent">Rent</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="refresh">Refresh</string>
+    <string name="delete">Delete</string>
+    <string name="call">Call</string>
+    <string name="altcall">Call 2</string>
+    <string name="sms">SMS</string>
+    <string name="abbreviation">Abbreviations</string>
+    <string name="help">HELP</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="rs">Rs.</string>
+    <string name="disclaimer">By clicking Register, you confirm that you have read our &lt;a href="http://www.miraroadagents.com/app/Disclaimer.html">Disclaimer&lt;/a> and you agree to our &lt;a href="http://k-exchange.com/TnC.html">Terms &amp; condition&lt;/a>.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_noticeboard">Noticeboard</string>
+    <string name="title_activity_my_noticeboard">My Noticeboard</string>
+
+</resources>

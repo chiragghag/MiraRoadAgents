@@ -1,0 +1,258 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/themeWHITE"
+    tools:context=".RegisterActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/txtComment"
+            style="@style/Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="All fields are mandatory" />
+
+        <RadioGroup
+            android:id="@+id/radioUserType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtComment"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/UserBroker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Broker" />
+
+            <RadioButton
+                android:id="@+id/UserBuilder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Builder" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtCity"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioUserType"
+            android:text="City -" />
+
+        <TextView
+            android:id="@+id/ddCity"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCity"
+            android:layout_below="@+id/radioUserType"
+            android:layout_toRightOf="@+id/txtCity"
+            android:hint="select city" />
+
+        <TextView
+            android:id="@+id/txtTown"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCity"
+            android:text="Town -" />
+
+        <TextView
+            android:id="@+id/ddTown"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtTown"
+            android:layout_below="@+id/txtCity"
+            android:layout_toRightOf="@+id/txtTown"
+            android:hint="select town" />
+
+        <TextView
+            android:id="@+id/txtLocality"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTown"
+            android:text="Locality -" />
+
+        <TextView
+            android:id="@+id/ddLocality"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLocality"
+            android:layout_below="@+id/ddTown"
+            android:layout_toRightOf="@+id/txtLocality"
+            android:hint="select locality" />
+
+        <TextView
+            android:id="@+id/txtBusinessName"
+            style="@style/Field"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLocality"
+            android:text="Business Name -" />
+
+        <EditText
+            android:id="@+id/editBusinessName"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtBusinessName"
+            android:layout_below="@+id/txtLocality"
+            android:layout_toRightOf="@+id/txtBusinessName"
+            android:inputType="textCapWords"
+            android:maxLength="20" />
+
+        <TextView
+            android:id="@+id/txtAgentName"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBusinessName"
+            android:text="Agent Name -" />
+
+        <EditText
+            android:id="@+id/editAgentName"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtAgentName"
+            android:layout_below="@+id/txtBusinessName"
+            android:layout_toRightOf="@+id/txtAgentName"
+            android:inputType="textCapWords"
+            android:maxLength="20" />
+
+        <TextView
+            android:id="@+id/txtMobile"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAgentName"
+            android:text="Mobile # -" />
+
+        <EditText
+            android:id="@+id/editMobile"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtMobile"
+            android:layout_below="@+id/txtAgentName"
+            android:layout_toRightOf="@+id/txtMobile"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMobile"
+            android:text="Email -" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtEmail"
+            android:layout_below="@+id/txtMobile"
+            android:layout_toRightOf="@+id/txtEmail"
+            android:inputType="textEmailAddress"
+            android:maxLength="50" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtPassword"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:text="Password -" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtPassword"
+            android:layout_below="@+id/txtEmail"
+            android:layout_toRightOf="@+id/txtPassword"
+            android:inputType="textPassword"
+            android:maxLength="16" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtConfirmPassword"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:text="Confirm Password -" />
+
+        <EditText
+            android:id="@+id/editConfirmPassword"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtConfirmPassword"
+            android:layout_below="@+id/txtPassword"
+            android:layout_toRightOf="@+id/txtConfirmPassword"
+            android:inputType="textPassword"
+            android:maxLength="16" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConfirmPassword"
+            android:layout_marginTop="20dp"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/txtDisclaimer"
+            style="@style/Field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnRegister"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:text="@string/disclaimer" />
+
+        <TextView
+            android:id="@+id/txtExisting"
+            style="@style/ClickLinkSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDisclaimer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="Existing User"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pbProgess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

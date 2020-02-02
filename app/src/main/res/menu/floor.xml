@@ -1,0 +1,95 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/floor_G"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="G - Ground"/>
+    <item
+        android:id="@+id/floor_L"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="L - Lower"/>
+    <item
+        android:id="@+id/floor_M"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="M - Middle"/>
+    <item
+        android:id="@+id/floor_H"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="H - Higher"/>
+    <item
+        android:id="@+id/floor_T"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="T - Top"/>
+    <item
+        android:id="@+id/floor_1"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="1st - First"/>
+    <item
+        android:id="@+id/floor_2"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="2nd - Second"/>
+    <item
+        android:id="@+id/floor_3"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="3rd - Third"/>
+    <item
+        android:id="@+id/floor_4"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="4th - Fourth"/>
+    <item
+        android:id="@+id/floor_5"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="5th - Fifth"/>
+    <item
+        android:id="@+id/floor_6"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="6th - Sixth"/>
+    <item
+        android:id="@+id/floor_7"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="7th - Seventh"/>
+    <item
+        android:id="@+id/floor_8"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="8th - Eighth"/>
+    <item
+        android:id="@+id/floor_9"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="9th - Ninth"/>
+    <item
+        android:id="@+id/floor_10"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="10th - Tenth"/>
+    <item
+        android:id="@+id/floor_11"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="11th - Eleventh"/>
+    <item
+        android:id="@+id/floor_12"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="12th - twelfth"/>
+    
+    <item
+        android:id="@+id/floor_12p"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="12th +"/>
+
+</menu>

@@ -1,0 +1,357 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeWHITE"
+    tools:context=".MembershipDetailsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tbl_Details"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Features"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtOthers"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:text="Others"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtMembers"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Mira Road Agents Members"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures2"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Create Account" />
+
+                    <TextView
+                        android:id="@+id/txtOthers2"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:text="Yes" />
+
+                    <TextView
+                        android:id="@+id/txtMembers2"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures3"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Add Properties" />
+
+                    <TextView
+                        android:id="@+id/txtOthers3"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        android:id="@+id/txtMembers3"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures4"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="View Properties" />
+
+                    <TextView
+                        android:id="@+id/txtOthers4"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:text="Yes" />
+
+                    <TextView
+                        android:id="@+id/txtMembers4"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures5"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="View Property Contact Details" />
+
+                    <TextView
+                        android:id="@+id/txtOthers5"
+                        android:layout_width="80dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="No" />
+
+                    <TextView
+                        android:id="@+id/txtMembers5"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures6"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="View Other Agents Contact Details" />
+
+                    <TextView
+                        android:id="@+id/txtOthers6"
+                        android:layout_width="80dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="No" />
+
+                    <TextView
+                        android:id="@+id/txtMembers6"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures7"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="View Other Agents Property Details" />
+
+                    <TextView
+                        android:id="@+id/txtOthers7"
+                        android:layout_width="80dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="No" />
+
+                    <TextView
+                        android:id="@+id/txtMembers7"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures8"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="View Noticeboard" />
+
+                    <TextView
+                        android:id="@+id/txtOthers8"
+                        android:layout_width="80dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Yes" />
+
+                    <TextView
+                        android:id="@+id/txtMembers8"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtFeatures9"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:text="Update Noticeboard" />
+
+                    <TextView
+                        android:id="@+id/txtOthers9"
+                        android:layout_width="80dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="No" />
+
+                    <TextView
+                        android:id="@+id/txtMembers9"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Yes"
+                        android:textColor="@color/themeGREEN" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/MembershipCall"
+                style="@style/SubHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="For Membership Call" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/No1"
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="9833452109" />
+
+                <TextView
+                    android:id="@+id/btnCall1"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/call" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/No2"
+                    style="@style/Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="9920964745" />
+
+                <TextView
+                    android:id="@+id/btnCall2"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/call" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

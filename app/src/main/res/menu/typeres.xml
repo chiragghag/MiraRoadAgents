@@ -1,0 +1,59 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/RK1"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="1RK"/>
+    <item
+        android:id="@+id/BHK1"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="1BHK"/>
+    <item
+        android:id="@+id/BHK15"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="1.5BHK"/>
+    <item
+        android:id="@+id/BHK2"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="2BHK"/>
+    <item
+        android:id="@+id/BHK25"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="2.5BHK"/>
+    <item
+        android:id="@+id/BHK3"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="3BHK"/>
+    <item
+        android:id="@+id/BHK3p"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="3+BHK"/>
+    <item
+        android:id="@+id/RHRowHouse"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="RH - Row House"/>
+    <item
+        android:id="@+id/Bungalow"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Bungalow"/>
+    <item
+        android:id="@+id/Duplex"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Duplex"/>
+    <item
+        android:id="@+id/Other"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Other"/>
+
+</menu>

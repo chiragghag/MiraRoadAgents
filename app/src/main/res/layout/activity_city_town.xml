@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeWHITE"
+    android:paddingBottom="0px"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CityTownActivity" >
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/txtCity"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="City -" />
+
+        <TextView
+            android:id="@+id/ddCity"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCity"
+            android:layout_toRightOf="@+id/txtCity"
+            android:hint="select city" />
+
+        <TextView
+            android:id="@+id/txtTown"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCity"
+            android:text="Town -" />
+
+        <TextView
+            android:id="@+id/ddTown"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtTown"
+            android:layout_below="@+id/txtCity"
+            android:layout_toRightOf="@+id/txtTown"
+            android:hint="select town" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+</RelativeLayout>

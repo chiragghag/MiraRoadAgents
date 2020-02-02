@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="themeBLUE">#393285</color>
+    <color name="themePINK">#ad4b83</color>
+    <color name="themeRED">#e32023</color>
+    <color name="themeGREEN">#8AC007</color>
+    <color name="themeLISTHEAD">#393285</color>
+    <!-- <color name="themeLISTHEAD">#a89fcc</color> -->
+    <color name="themeLISTALT">#ebebeb</color>
+    <color name="themeLISTRED">#FF4F4F</color>
+    <color name="themeBLACK">#000000</color>
+    <color name="themeWHITE">#FFFFFF</color>
+    <color name="themeBACK">#40c0bcd6</color>
+
+</resources>

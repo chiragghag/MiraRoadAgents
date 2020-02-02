@@ -1,0 +1,313 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeWHITE"
+    tools:context=".ViewProfileActivity" >
+
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/txtEdit"
+                    style="@style/ClickLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit/Update" />
+
+                <TextView
+                    android:id="@+id/txtBusinessName"
+                    style="@style/Field"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEdit"
+                    android:text="Business Name - " />
+
+                <TextView
+                    android:id="@+id/valBusinessName"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEdit"
+                    android:layout_toRightOf="@+id/txtBusinessName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtAgentName"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtBusinessName"
+                    android:text="Agent Name - " />
+
+                <TextView
+                    android:id="@+id/valAgentName"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtBusinessName"
+                    android:layout_toRightOf="@+id/txtAgentName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtMobile"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAgentName"
+                    android:text="Mobile # - " />
+
+                <TextView
+                    android:id="@+id/valMobile"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAgentName"
+                    android:layout_toRightOf="@+id/txtMobile"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMobile"
+                    android:text="Email - " />
+
+                <TextView
+                    android:id="@+id/valEmail"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMobile"
+                    android:layout_toRightOf="@+id/txtEmail"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEmail"
+                    android:text="City - " />
+
+                <TextView
+                    android:id="@+id/valCity"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEmail"
+                    android:layout_toRightOf="@+id/txtCity"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtTown"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCity"
+                    android:text="Town - " />
+
+                <TextView
+                    android:id="@+id/valTown"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCity"
+                    android:layout_toRightOf="@+id/txtTown"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtLocality"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTown"
+                    android:text="Locality - " />
+
+                <TextView
+                    android:id="@+id/valLocality"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTown"
+                    android:layout_toRightOf="@+id/txtLocality"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLocality"
+                    android:text="Address - " />
+
+                <TextView
+                    android:id="@+id/valAddress"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLocality"
+                    android:layout_toRightOf="@+id/txtAddress"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtAlt"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtAddress"
+                    android:layout_below="@+id/valAddress"
+                    android:text="Alternate # - " />
+
+                <TextView
+                    android:id="@+id/valAlt"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/valAddress"
+                    android:layout_toRightOf="@+id/txtAlt"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtWebsite"
+                    style="@style/Field"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAlt"
+                    android:text="Website - " />
+
+                <TextView
+                    android:id="@+id/valWebsite"
+                    style="@style/Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAlt"
+                    android:layout_toRightOf="@+id/txtWebsite"
+                    android:text="" />
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+    <!-- The navigation drawer -->
+
+    <ScrollView
+        android:id="@+id/left_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                android:id="@+id/navHeading"
+                style="@style/PageHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Home" />
+
+            <TextView
+                android:id="@+id/txtMyProperties"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/myproperties" />
+
+            <TextView
+                android:id="@+id/txtAddProperties"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/addproperty" />
+
+            <TextView
+                android:id="@+id/txtMyNoticeboard"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/mynoticeboard"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtMyAccount"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/myaccount" />
+
+            <TextView
+                android:id="@+id/navView"
+                style="@style/PageHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="View / Search" />
+
+            <TextView
+                android:id="@+id/txtProperties"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Property List" />
+
+            <TextView
+                android:id="@+id/txtAgents"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Agents List" />
+
+            <TextView
+                android:id="@+id/txtNoticeboard"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/noticeboard" />
+
+            <TextView
+                android:id="@+id/txtMyCityTown"
+                style="@style/ListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Change City Town"
+                android:textColor="#999" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

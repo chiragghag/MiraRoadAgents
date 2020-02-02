@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/themeWHITE" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themeWHITE" >
+
+            <RelativeLayout
+                android:id="@+id/Head"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/themeLISTALT"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/row1"
+                    style="@style/RowHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:text="Om Estate Agency - Ashok Ghag"
+                    android:textColor="@color/themeLISTHEAD"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rowCall"
+                    style="@style/RowHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/row1"
+                    android:paddingLeft="5dp"
+                    android:text="Call"
+                    android:textColor="@color/themeLISTHEAD" />
+
+                <TextView
+                    android:id="@+id/rowPhoneno"
+                    style="@style/RowHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1"
+                    android:layout_toRightOf="@+id/rowCall"
+                    android:paddingLeft="5dp"
+                    android:text="9004993738"
+                    android:textColor="@color/themeLISTHEAD" />
+
+                <!--
+                     <TextView
+                    android:id="@+id/slash"
+                    style="@style/RowHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1"
+                    android:layout_toRightOf="@+id/rowPhoneno"
+                    android:paddingLeft="5dp"
+                    android:text="/"
+                    android:textColor="@color/themeLISTHEAD" />
+                -->
+
+                <TextView
+                    android:id="@+id/rowAltno"
+                    style="@style/RowHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1"
+                    android:layout_toRightOf="@+id/rowPhoneno"
+                    android:text=" / 9176858387"
+                    android:textColor="@color/themeLISTHEAD" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/Head"
+                android:background="#999999" />
+
+            <TextView
+                android:id="@+id/rowDate"
+                style="@style/Row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hr"
+                android:paddingRight="5dp"
+                android:text="12 May 2014"
+                android:textColor="#aaa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/row3"
+                style="@style/Row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowDate"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollHorizontally="false"
+                android:text="Urgent Requirement
+2BHK in Kanakia
+budget 50L to 60L
+Muslim Party need a flat on rent FF FF FF FF Budget Rent 10K to 12K Depo. 1L
+in Poonam Sagar
+Invester Flat available in Kanakia
+Dev Paradise @ 6500K
+Builders rate 7000K, hurry invester
+wants to sale it urgently"
+                android:textColor="@color/themeBLACK" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitem" >
+
+    <TextView
+        android:id="@+id/row1"
+        style="@style/RowHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:textColor="@color/themeLISTHEAD"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/row2"
+        style="@style/Row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/row1"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/row3"
+        style="@style/Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/row2"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/rowLocality"
+        style="@style/Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/row3"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/row3view"
+        style="@style/Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/row3"
+        android:paddingRight="5dp"
+        android:textColor="@color/themeBLUE" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/locality_svroad"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="S.V. Road"/>
+    
+    <item
+        android:id="@+id/locality_caterroad"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Cater Road"/>
+
+</menu>

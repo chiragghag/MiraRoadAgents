@@ -1,0 +1,347 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/themeWHITE"
+    tools:context=".EditPropertyActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/txtComment"
+            style="@style/Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="All fields are mandatory" />
+
+        <RadioGroup
+            android:id="@+id/radioSellRent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtComment"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioSell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:checked="true"
+                android:text="Sell" />
+
+            <RadioButton
+                android:id="@+id/radioRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioResCom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioSellRent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:checked="true"
+                android:text="Residential" />
+
+            <RadioButton
+                android:id="@+id/radioCom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commercial" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtCity"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioResCom"
+            android:text="City -" />
+
+        <TextView
+            android:id="@+id/ddCity"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCity"
+            android:layout_below="@+id/radioResCom"
+            android:layout_toRightOf="@+id/txtCity"
+            android:hint="select city" />
+
+        <TextView
+            android:id="@+id/txtTown"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCity"
+            android:text="Town -" />
+
+        <TextView
+            android:id="@+id/ddTown"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtTown"
+            android:layout_below="@+id/txtCity"
+            android:layout_toRightOf="@+id/txtTown"
+            android:hint="select town" />
+
+        <TextView
+            android:id="@+id/txtLocality"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTown"
+            android:text="Locality -" />
+
+        <TextView
+            android:id="@+id/ddLocality"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLocality"
+            android:layout_below="@+id/txtTown"
+            android:layout_toRightOf="@+id/txtLocality"
+            android:hint="select locality" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            style="@style/Field"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLocality"
+            android:text="Property Address -" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddress"
+            android:inputType="textCapWords"
+            android:maxLength="50" />
+
+        <TextView
+            android:id="@+id/txtExtraInfo"
+            style="@style/Field"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editAddress"
+            android:text="Optional Info -" />
+
+        <TextView
+            android:id="@+id/txtInfoShow"
+            style="@style/ClickLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtExtraInfo"
+            android:layout_below="@+id/editAddress"
+            android:layout_toRightOf="@+id/txtExtraInfo"
+            android:clickable="true"
+            android:text="select" />
+
+        <TextView
+            android:id="@+id/valExtraInfo"
+            style="@style/Field"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInfoShow"
+            android:layout_toRightOf="@+id/txtExtraInfo"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtArea"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valExtraInfo"
+            android:text="Area in Sqft -" />
+
+        <EditText
+            android:id="@+id/editArea"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtArea"
+            android:layout_below="@+id/valExtraInfo"
+            android:layout_toRightOf="@+id/txtArea"
+            android:inputType="number"
+            android:maxLength="5" />
+
+        <TextView
+            android:id="@+id/txtType"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtArea"
+            android:text="Type -" />
+
+        <TextView
+            android:id="@+id/ddType"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtType"
+            android:layout_below="@+id/editArea"
+            android:layout_toRightOf="@+id/txtType"
+            android:hint="select type" />
+
+        <TextView
+            android:id="@+id/txtFloor"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtType"
+            android:text="Floor -" />
+
+        <TextView
+            android:id="@+id/ddFloor"
+            style="@style/DropDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtFloor"
+            android:layout_below="@+id/txtType"
+            android:layout_toRightOf="@+id/txtFloor"
+            android:hint="select floor" />
+
+        <TextView
+            android:id="@+id/txtCost"
+            style="@style/Field"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFloor"
+            android:text="Cost/Rate(@) -" />
+
+        <EditText
+            android:id="@+id/editCost"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCost"
+            android:layout_below="@+id/txtFloor"
+            android:layout_toRightOf="@+id/txtCost"
+            android:inputType="number"
+            android:maxLength="9" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtRent"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCost"
+            android:text="Rent -" />
+
+        <EditText
+            android:id="@+id/editRent"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtRent"
+            android:layout_below="@+id/txtCost"
+            android:layout_toRightOf="@+id/txtRent"
+            android:inputType="number"
+            android:maxLength="6" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtDeposit"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRent"
+            android:text="Deposit -" />
+
+        <EditText
+            android:id="@+id/editDeposit"
+            style="@style/InputText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtDeposit"
+            android:layout_below="@+id/txtRent"
+            android:layout_toRightOf="@+id/txtDeposit"
+            android:inputType="number"
+            android:maxLength="7" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/radioDirectSide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDeposit"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioDirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:checked="true"
+                android:text="Sharing" />
+
+            <RadioButton
+                android:id="@+id/radioSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Side By Side" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/layoutSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioDirectSide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnUpdateProperty"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/update" />
+
+            <TextView
+                android:id="@+id/txtCancel"
+                style="@style/ClickLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:text="@string/cancel" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbProgess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>
