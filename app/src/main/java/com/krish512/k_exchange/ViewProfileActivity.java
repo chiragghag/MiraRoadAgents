@@ -6,11 +6,10 @@ package com.krish512.k_exchange;
 
 import com.krish512.k_exchange.Utils.AppState;
 import com.krish512.k_exchange.Utils.AppState.enumLayout;
-import com.krish512.k_exchange.R;
 
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.drawerlayout.widget.DrawerLayout;
+import 	androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -55,7 +54,7 @@ public class ViewProfileActivity extends AppCompatActivity {
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerToggle = new ActionBarDrawerToggle(this, /* host Activity */
 		mDrawerLayout, /* DrawerLayout object */
-		R.drawable.ic_drawer, /* nav drawer icon to replace 'Up' caret */
+		//R.drawable.ic_drawer, /* nav drawer icon to replace 'Up' caret */
 		R.string.drawer_open, /* "open drawer" description */
 		R.string.drawer_close /* "close drawer" description */
 		) {

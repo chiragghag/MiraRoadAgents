@@ -14,8 +14,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Menu;
@@ -24,7 +24,6 @@ import android.widget.Toast;
 
 import com.krish512.k_exchange.Utils.AppState;
 import com.krish512.k_exchange.Utils.Operation;
-import com.krish512.k_exchange.R;
 import com.shephertz.app42.paas.sdk.android.App42API;
 import com.krish512.k_exchange.Utils.Util;
 
@@ -61,12 +60,9 @@ public class Splashscreen extends Activity {
 		} else {
 
 		TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Splashscreen.TELEPHONY_SERVICE);
-		if (telephonyManager.getDeviceId() != null){
-			AppState.DeviceID = telephonyManager.getDeviceId();
-		}else{
-			//Workarroud here
-			AppState.DeviceID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-		}
+		//Workarroud here
+		AppState.DeviceID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+
 		Log.i("splash screen: ", AppState.DeviceID);
 		new Handler().postDelayed(new Runnable() {
 

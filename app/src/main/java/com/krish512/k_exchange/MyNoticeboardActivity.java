@@ -17,9 +17,9 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.drawerlayout.widget.DrawerLayout;
+import 	androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
@@ -38,7 +38,6 @@ import com.krish512.k_exchange.Utils.AppState.enumLayout;
 import com.krish512.k_exchange.Utils.AppState.enumLogin;
 import com.krish512.k_exchange.Utils.LoadData;
 import com.krish512.k_exchange.Utils.Operation;
-import com.krish512.k_exchange.R;
 
 public class MyNoticeboardActivity extends AppCompatActivity {
 
@@ -67,7 +66,7 @@ public class MyNoticeboardActivity extends AppCompatActivity {
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerToggle = new ActionBarDrawerToggle(this, /* host Activity */
 		mDrawerLayout, /* DrawerLayout object */
-		R.drawable.ic_drawer, /* nav drawer icon to replace 'Up' caret */
+		//R.drawable.ic_drawer, /* nav drawer icon to replace 'Up' caret */
 		R.string.drawer_open, /* "open drawer" description */
 		R.string.drawer_close /* "close drawer" description */
 		) {
