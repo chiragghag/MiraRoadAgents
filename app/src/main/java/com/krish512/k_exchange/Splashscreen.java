@@ -13,9 +13,11 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.Window;
 import android.widget.Toast;
@@ -59,8 +61,13 @@ public class Splashscreen extends Activity {
 		} else {
 
 		TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Splashscreen.TELEPHONY_SERVICE);
-		AppState.DeviceID = telephonyManager.getDeviceId();
-
+		if (telephonyManager.getDeviceId() != null){
+			AppState.DeviceID = telephonyManager.getDeviceId();
+		}else{
+			//Workarroud here
+			AppState.DeviceID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+		}
+		Log.i("splash screen: ", AppState.DeviceID);
 		new Handler().postDelayed(new Runnable() {
 
 			@Override
