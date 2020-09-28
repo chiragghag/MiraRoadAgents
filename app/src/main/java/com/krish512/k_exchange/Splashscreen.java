@@ -61,7 +61,7 @@ public class Splashscreen extends Activity {
 
 		TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Splashscreen.TELEPHONY_SERVICE);
 		//Workarroud here
-		AppState.DeviceID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+		AppState.DeviceID = "11111";
 
 		Log.i("splash screen: ", AppState.DeviceID);
 		new Handler().postDelayed(new Runnable() {

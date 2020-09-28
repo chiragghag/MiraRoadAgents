@@ -123,7 +123,7 @@ public class HomeActivity extends AppCompatActivity {
 			alertDialog.show();
 		} else if (paidEndBefore.compareTo(new Date()) <= 0) {
 			AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-			alertDialog.setTitle("Join K-Exchange");
+			alertDialog.setTitle("Join Mira Road Agents");
 			alertDialog.setMessage("Hi " + AppState.AName
 					+ "! Your Mira Road Agents membership expires on "
 					+ date.format(paidEnd) + ". Renew your membership before "
@@ -171,7 +171,7 @@ public class HomeActivity extends AppCompatActivity {
 					builder.setTitle("Contact Us");
 					builder.setMessage("Hi "
 							+ AppState.AName
-							+ "! You have limited access to this App. Join K-Exchange & get full access to the App.");
+							+ "! You have limited access to this App. Join Mira Road Agents & get full access to the App.");
 
 					builder.setPositiveButton("Ok",
 							new DialogInterface.OnClickListener() {

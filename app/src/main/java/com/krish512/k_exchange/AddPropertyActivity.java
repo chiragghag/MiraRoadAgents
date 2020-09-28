@@ -1,7 +1,7 @@
 /**
-* Author: Krishna Modi
-* Contact: krish512@hotmail.com
-*/
+ * Author: Krishna Modi
+ * Contact: krish512@hotmail.com
+ */
 package com.krish512.k_exchange;
 
 import java.net.URI;
@@ -272,7 +272,7 @@ public class AddPropertyActivity extends AppCompatActivity {
 			radioDirect.setTextColor(getResources().getColor(R.color.themeRED));
 			radioSide.setTextColor(getResources().getColor(R.color.themeRED));
 			Toast toast = Toast.makeText(getBaseContext(),
-					"Error: Select Sharing or Side by Side", Toast.LENGTH_LONG);
+					"Error: Select Direct Yes/No", Toast.LENGTH_LONG);
 			toast.show();
 			return false;
 		} else {
@@ -440,7 +440,7 @@ public class AddPropertyActivity extends AppCompatActivity {
 
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v,
-			ContextMenuInfo menuInfo) {
+									ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
 		menu.removeItem(android.R.id.switchInputMethod);
 		if (ddSection == dd.CITY) {

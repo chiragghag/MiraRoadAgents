@@ -1,7 +1,7 @@
 /**
-* Author: Krishna Modi
-* Contact: krish512@hotmail.com
-*/
+ * Author: Krishna Modi
+ * Contact: krish512@hotmail.com
+ */
 package com.krish512.k_exchange;
 
 import java.net.URI;
@@ -170,7 +170,7 @@ public class InfoPropertyActivity extends AppCompatActivity {
 				builder.setPositiveButton("Yes",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog,
-									int which) {
+												int which) {
 								pbProgress.setVisibility(View.VISIBLE);
 								List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>();
 								params.add(new BasicNameValuePair("PID",
@@ -184,7 +184,7 @@ public class InfoPropertyActivity extends AppCompatActivity {
 
 							@Override
 							public void onClick(DialogInterface dialog,
-									int which) {
+												int which) {
 								// I do not need any action here you might
 								dialog.dismiss();
 							}
@@ -208,7 +208,7 @@ public class InfoPropertyActivity extends AppCompatActivity {
 				builder.setPositiveButton("Yes",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog,
-									int which) {
+												int which) {
 								pbProgress.setVisibility(View.VISIBLE);
 								List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>();
 								params.add(new BasicNameValuePair("PID",
@@ -222,7 +222,7 @@ public class InfoPropertyActivity extends AppCompatActivity {
 
 							@Override
 							public void onClick(DialogInterface dialog,
-									int which) {
+												int which) {
 								// I do not need any action here you might
 								dialog.dismiss();
 							}
@@ -311,23 +311,27 @@ public class InfoPropertyActivity extends AppCompatActivity {
 						+ infoJSON.getString("town") + " | "
 						+ infoJSON.getString("city"));
 				txtExtraInfo.setText(infoJSON.getString("optionalinfo"));
-				txtBrokerage.setText(infoJSON.getString("directside"));
+				if(infoJSON.optString("directside").toLowerCase().equals("sharing")) {
+					txtBrokerage.setText("Yes");
+				} else {
+					txtBrokerage.setText("No");
+				}
 
 				if (infoJSON.getString("sellrent").equalsIgnoreCase("SELL")) {
 
 					txtTitle.setText("Rs. "
 							+ ((Integer.parseInt(infoJSON.getString("cost")) >= AppState.RateThreshold) ? ""
-									: "@")
+							: "@")
 							+ new DecimalFormat("##,##,###").format(Integer
-									.parseInt(infoJSON.getString("cost"))));
+							.parseInt(infoJSON.getString("cost"))));
 				} else {
 					txtTitle.setText("Rs. "
 							+ new DecimalFormat("##,##,###").format(Integer
-									.parseInt(infoJSON.getString("rent")))
+							.parseInt(infoJSON.getString("rent")))
 							+ " / "
 							+ "Rs. "
 							+ new DecimalFormat("##,##,###").format(Integer
-									.parseInt(infoJSON.getString("deposit"))));
+							.parseInt(infoJSON.getString("deposit"))));
 				}
 
 				// txtAddress.setText(infoJSON.getString("propaddress") + "\n"
@@ -359,8 +363,8 @@ public class InfoPropertyActivity extends AppCompatActivity {
 					txtMembershipDetails.setVisibility(View.GONE);
 				} else {
 					txtContact
-							.setText("Business Name - **********\nAgent Name - **********\nPhone - # **********\n\nTo get contact info of this property & all the properties in your town Join K-Exchange\n");
-					txtNumber.setText("9833452109");
+							.setText("Business Name - **********\nAgent Name - **********\nPhone - # **********\n\nTo get contact info of this property & all the properties in your town Join Mira Road Agents\n");
+					txtNumber.setText("8169405136");
 					txtAltNumber.setText("9920964745");
 					btnSMS.setVisibility(View.VISIBLE);
 					txtMembershipDetails.setVisibility(View.VISIBLE);

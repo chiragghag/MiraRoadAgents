@@ -52,4 +52,7 @@
     <string name="title_activity_noticeboard">Noticeboard</string>
     <string name="title_activity_my_noticeboard">My Noticeboard</string>
 
+    <!--    <string name="otp_api_key">ASCl4kLiNOVvYpmbxjtwPMX965sBGyI12ZWdq3zrJDEHFnhc0oEUIzGnvPbXhwydY4OQBZmFRi6K89xN</string>-->
+    <string name="otp_api_key">aUFuOpm6MCBAlWkx5R7TZzcvhH3S8itPKJd2GDo4nrgy9qeNYLXT83aFtE6OWhYuADoL2J9NqzZBedM5</string>
+
 </resources>

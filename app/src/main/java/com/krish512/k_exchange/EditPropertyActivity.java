@@ -1,7 +1,7 @@
 /**
-* Author: Krishna Modi
-* Contact: krish512@hotmail.com
-*/
+ * Author: Krishna Modi
+ * Contact: krish512@hotmail.com
+ */
 package com.krish512.k_exchange;
 
 import java.net.URI;
@@ -364,12 +364,12 @@ public class EditPropertyActivity extends AppCompatActivity {
 					editRent.setText(infoJSON.getString("rent"));
 					editDeposit.setText(infoJSON.getString("deposit"));
 
-					if (infoJSON.getString("directside").equalsIgnoreCase(
-							radioDirect.getText().toString())) {
+					if(infoJSON.optString("directside").toLowerCase().equals("sharing")) {
 						radioDirect.setChecked(true);
 					} else {
 						radioSide.setChecked(true);
 					}
+
 				} catch (JSONException e1) {
 					e1.printStackTrace();
 					Log.d(APP_TAG, "Error:" + e1.getMessage());
@@ -430,7 +430,7 @@ public class EditPropertyActivity extends AppCompatActivity {
 						.getText().toString()));
 				try {
 					response = Operation.postHttpResponse(new URI(
-							AppState.absoluteUri + "updatepropertyinfo.php"),
+									AppState.absoluteUri + "updatepropertyinfo.php"),
 							params);
 				} catch (URISyntaxException e) {
 					// TODO Auto-generated catch block
@@ -478,18 +478,18 @@ public class EditPropertyActivity extends AppCompatActivity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 		switch (requestCode) {
-		case 90:
-			OptionalInfo = AppState.temp;
-			txtExtraInfo.setText(OptionalInfo);
-			String APP_TAG = null;
-			Log.d(APP_TAG, OptionalInfo);
-			Log.d(APP_TAG, AppState.temp);
+			case 90:
+				OptionalInfo = AppState.temp;
+				txtExtraInfo.setText(OptionalInfo);
+				String APP_TAG = null;
+				Log.d(APP_TAG, OptionalInfo);
+				Log.d(APP_TAG, AppState.temp);
 		}
 	}
 
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v,
-			ContextMenuInfo menuInfo) {
+									ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
 		menu.removeItem(android.R.id.switchInputMethod);
 		if (ddSection == dd.CITY) {

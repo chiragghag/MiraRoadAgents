@@ -285,11 +285,19 @@
             android:maxLength="7" >
         </EditText>
 
+        <TextView
+            android:id="@+id/txtBrokerage"
+            style="@style/Field"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDeposit"
+            android:text="Direct -" />
+
         <RadioGroup
             android:id="@+id/radioDirectSide"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtDeposit"
+            android:layout_below="@+id/txtBrokerage"
             android:orientation="horizontal" >
 
             <RadioButton
@@ -298,13 +306,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:checked="true"
-                android:text="Sharing" />
+                android:text="Yes" />
 
             <RadioButton
                 android:id="@+id/radioSide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Side By Side" />
+                android:text="No" />
         </RadioGroup>
 
         <LinearLayout

@@ -24,7 +24,7 @@ public class HelpActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_help);
 		TextView txtCustomerCare = (TextView) findViewById(R.id.txtCustomerCare);
 		txtCustomerCare
-				.setText("Customer Care - 9833452109\n10:00 am to 7:00 pm");
+				.setText("Customer Care - 8169405136\n10:00 am to 7:00 pm");
 		TextView txtAddress = (TextView) findViewById(R.id.txtAddress);
 		// txtAddress.setText("Address:\nArunodaya Chs, 104, C-16, Sector-8,\nShantinagar, Mira Road - E,\nThane - 401107");
 		txtAddress

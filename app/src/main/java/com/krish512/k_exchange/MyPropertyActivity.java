@@ -757,7 +757,7 @@ public class MyPropertyActivity extends AppCompatActivity {
 					alertDialog
 							.setMessage("Hi "
 									+ AppState.AName
-									+ "!  Refresh you properties from time to time. Properties older than 15 Days will not be included in K-Exchange Print Issue.");
+									+ "!  Refresh you properties from time to time. Properties older than 15 Days will not be included in Mira Road Agents Print Issue.");
 					alertDialog.setButton("OK",
 							new DialogInterface.OnClickListener() {
 

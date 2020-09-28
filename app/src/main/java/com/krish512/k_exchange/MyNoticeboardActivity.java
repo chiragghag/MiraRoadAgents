@@ -243,7 +243,7 @@ public class MyNoticeboardActivity extends AppCompatActivity {
 			builder.setTitle("Contact Us");
 			builder.setMessage("Hi "
 					+ AppState.AName
-					+ "! You have limited access to this App. Join K-Exchange & get full access to the App.");
+					+ "! You have limited access to this App. Join Mira Road Agents & get full access to the App.");
 
 			builder.setPositiveButton("Ok",
 					new DialogInterface.OnClickListener() {

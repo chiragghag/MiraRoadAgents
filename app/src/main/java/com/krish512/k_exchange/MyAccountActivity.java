@@ -267,7 +267,7 @@ public class MyAccountActivity extends AppCompatActivity {
 		TextView txtDuration = (TextView) findViewById(R.id.txtDuration);
 		TextView valStatus = (TextView) findViewById(R.id.valStatus);
 		if (AppState.Paid.equalsIgnoreCase("PAID")) {
-			valAccountType.setText("K-Exchange Member");
+			valAccountType.setText("Mira Road Agents Member");
 			valAccountType.setTextColor(getResources().getColor(
 					R.color.themeGREEN));
 			valStatus.setText("Active");
