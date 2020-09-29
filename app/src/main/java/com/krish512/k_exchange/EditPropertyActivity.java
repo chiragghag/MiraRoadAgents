@@ -364,7 +364,7 @@ public class EditPropertyActivity extends AppCompatActivity {
 					editRent.setText(infoJSON.getString("rent"));
 					editDeposit.setText(infoJSON.getString("deposit"));
 
-					if(infoJSON.optString("directside").toLowerCase().equals("sharing")) {
+					if(infoJSON.optString("directside").toLowerCase().equals("direct")) {
 						radioDirect.setChecked(true);
 					} else {
 						radioSide.setChecked(true);
@@ -403,7 +403,7 @@ public class EditPropertyActivity extends AppCompatActivity {
 					params.add(new BasicNameValuePair("directside", "DIRECT"));
 				} else {
 					params.add(new BasicNameValuePair("directside",
-							"SIDE BY SIDE"));
+							"VIA"));
 				}
 
 				params.add(new BasicNameValuePair("optionalinfo", OptionalInfo));

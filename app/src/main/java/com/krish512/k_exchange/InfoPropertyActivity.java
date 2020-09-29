@@ -311,7 +311,7 @@ public class InfoPropertyActivity extends AppCompatActivity {
 						+ infoJSON.getString("town") + " | "
 						+ infoJSON.getString("city"));
 				txtExtraInfo.setText(infoJSON.getString("optionalinfo"));
-				if(infoJSON.optString("directside").toLowerCase().equals("sharing")) {
+				if(infoJSON.optString("directside").toLowerCase().equals("direct")) {
 					txtBrokerage.setText("Yes");
 				} else {
 					txtBrokerage.setText("No");
