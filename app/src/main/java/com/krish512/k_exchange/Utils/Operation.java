@@ -469,6 +469,10 @@ public class Operation {
 					int rent = properties.getInt("rent");
 					LoadData.MyProperties.properties[i].rent = rent;
 					Log.d(APP_TAG, String.valueOf(rent));
+
+					LoadData.MyProperties.properties[i].deposit = properties.optInt("deposit");
+					LoadData.MyProperties.properties[i].optionalinfo = properties.optString("optionalinfo");
+
 					String directside = properties.getString("directside");
 					LoadData.MyProperties.properties[i].directside = directside;
 					Log.d(APP_TAG, directside);
