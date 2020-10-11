@@ -1019,7 +1019,7 @@ public class MyPropertyActivity extends AppCompatActivity {
             Font bf11 = new Font(Font.FontFamily.TIMES_ROMAN, 11);
             Font bf10 = new Font(Font.FontFamily.TIMES_ROMAN, 10);
             Font bluebf11 = new Font(Font.FontFamily.TIMES_ROMAN, 14, Font.UNDERLINE, new BaseColor(51, 0, 255));
-            Font bluebf20 = new Font(Font.FontFamily.TIMES_ROMAN, 20, Font.UNDERLINE, new BaseColor(51, 0, 255));
+            Font bluebf20 = new Font(Font.FontFamily.TIMES_ROMAN, 20, Font.UNDERLINE, new BaseColor(3, 155, 229));
 
             document.setPageSize(PageSize.A4);
             document.open();
@@ -1080,13 +1080,13 @@ public class MyPropertyActivity extends AppCompatActivity {
 
             for (int i = 0; i < LoadData.MyProperties.properties.length; ++i) {
                 insertCell(table, LoadData.MyProperties.properties[i].sellrent, Element.ALIGN_LEFT, 1, bf11);
-                insertCell(table, LoadData.MyProperties.properties[i].type + " (" + LoadData.MyProperties.properties[i].rescom + ")\n" + LoadData.MyProperties.properties[i].floor, Element.ALIGN_LEFT, 1, bf10);
+                insertCell(table, LoadData.MyProperties.properties[i].type + "\n" + LoadData.MyProperties.properties[i].floor, Element.ALIGN_LEFT, 1, bf10);
                 insertCell(table, LoadData.MyProperties.properties[i].area, Element.ALIGN_LEFT, 1, bf11);
                 if (LoadData.MyProperties.properties[i].optionalinfo != null
                         && !LoadData.MyProperties.properties[i].optionalinfo.isEmpty()) {
-                    insertCell(table, LoadData.MyProperties.properties[i].address + ", " + LoadData.MyProperties.properties[i].locality + ", " + LoadData.MyProperties.properties[i].optionalinfo, Element.ALIGN_LEFT, 1, bf10);
+                    insertCell(table, LoadData.MyProperties.properties[i].address + ",\n" + LoadData.MyProperties.properties[i].locality + ",\n" + LoadData.MyProperties.properties[i].optionalinfo, Element.ALIGN_LEFT, 1, bf10);
                 } else {
-                    insertCell(table, LoadData.MyProperties.properties[i].address + ", " + LoadData.MyProperties.properties[i].locality, Element.ALIGN_LEFT, 1, bf10);
+                    insertCell(table, LoadData.MyProperties.properties[i].address + ",\n" + LoadData.MyProperties.properties[i].locality, Element.ALIGN_LEFT, 1, bf10);
                 }
                 if (LoadData.MyProperties.properties[i].sellrent.equalsIgnoreCase("rent")) {
                     insertCell(table, "R: " + LoadData.MyProperties.properties[i].rent + "\nD: " + LoadData.MyProperties.properties[i].deposit, Element.ALIGN_LEFT, 1, bf11);
@@ -1104,12 +1104,38 @@ public class MyPropertyActivity extends AppCompatActivity {
             Paragraph appLinkPara = new Paragraph(32);
             appLinkPara.setAlignment(Element.ALIGN_CENTER);
 
-            Chunk blueAppLink = new Chunk("\nClick here to download MIRA ROAD AGENTS app\nfrom Google play store", bluebf20);
+            Chunk blueAppLink = new Chunk("\nClick here to download \nMIRA ROAD AGENTS app from Google play store", bluebf20);
             blueAppLink.setAnchor("https://play.google.com/store/apps/details?id=com.chirag.mira_road_agents");
             appLinkPara.add(blueAppLink);
 
             document.add(appLinkPara);
-
+            Chunk titleAbrrvChunk = new Chunk("\nAbbreviations used: \n", bf11);
+            Paragraph titleAbrrv = new Paragraph();
+            titleAbrrv.add(titleAbrrvChunk);
+            titleAbrrv.setAlignment(Element.ALIGN_LEFT);
+            document.add(titleAbrrv);
+            String Abbreviations = "";
+            Abbreviations += "OC - Occupancy Certificate, ";
+            Abbreviations += "Ter - Terrace, ";
+            Abbreviations += "OP - Open parking, ";
+            Abbreviations += "SP - Stilt Parking, ";
+            Abbreviations += "GF - Garden Facing, ";
+            Abbreviations += "\nBF - Back facing, ";
+            Abbreviations += "RF - Road Facing, ";
+            Abbreviations += "FW - Full white, ";
+            Abbreviations += "AV - Agrement Value, ";
+            Abbreviations += "CM - Club Membership, ";
+            Abbreviations += "Bal - Balcony, ";
+            Abbreviations += "\nFF - Fully Furnished, ";
+            Abbreviations += "SF - Semi Furnished, ";
+            Abbreviations += "UC - Under Construction, ";
+            Abbreviations += "HD - Heavy Deposit, ";
+            Abbreviations += "MB - Master Bed, ";
+            Chunk abbrvParaChunk = new Chunk(Abbreviations, bf11);
+            Paragraph abbrvPara = new Paragraph();
+            abbrvPara.add(abbrvParaChunk);
+            abbrvPara.setAlignment(Element.ALIGN_LEFT);
+            document.add(abbrvPara);
 
         } catch (DocumentException e) {
             e.printStackTrace();
