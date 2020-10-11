@@ -62,8 +62,10 @@ public class LoadData {
 		public String address;
 		public int cost;
 		public int rent;
+		public int deposit;
 		public String directside;
 		public Date lastupdate;
+		public String optionalinfo;
 	}
 
 	public static class Notices {
